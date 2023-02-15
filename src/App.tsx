@@ -9,20 +9,26 @@ import Meeting from "./pages/Meeting";
 import MyMeetings from "./pages/MyMeetings";
 import OneOnOneMeeting from "./pages/OneOnOneMeeting";
 import VideoConference from "./pages/VideoConference";
+import CalendarView from "./pages/Calendar";
+
 
 function App() {
   return (
+    
     <Routes>
+      {/* <div className="App"><CalendarView/></div> */}
       <Route path="/login" element={<Login />} />
       <Route path="/create" element={<CreateMeeting />} />
       <Route path="/create1on1" element={<OneOnOneMeeting />} />
       <Route path="/videoconference" element={<VideoConference />} />
-      <Route path="/mymeetings" element={<MyMeetings />} />
+      <Route path="/mymeetings" element={<CalendarView />} />
       <Route path="/join/:id" element={<JoinMeeting />} />
       <Route path="/meetings" element={<Meeting />} />
       <Route path="/" element={<Dashboard />} />
       <Route path="*" element={<Dashboard />} />
+      
     </Routes>
+    
   );
 }
 
