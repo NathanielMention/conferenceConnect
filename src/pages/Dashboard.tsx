@@ -1,6 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import { useAppSelector } from '../app/hooks';
+import Header from '../components/Header';
 import useAuth from '../hooks/useAuth';
 
 function Dashboard() {
@@ -11,6 +12,7 @@ function Dashboard() {
   return (
     <>
       <div>
+        <Header/>
         <div onClick={() => navigate("/create")}>Create Meeting</div>
         <div onClick={() => navigate("/mymeetings")}>View Meetings</div>
         <div onClick={() => navigate("/meetings")}>View Invites</div>
