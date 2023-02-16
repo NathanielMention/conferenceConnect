@@ -2,6 +2,7 @@ import format from "date-fns/format";
 import getDay from "date-fns/getDay";
 import parse from "date-fns/parse";
 import startOfWeek from "date-fns/startOfWeek";
+import useAuth from '../hooks/useAuth'
 import React, { useState } from "react";
 import { Calendar, dateFnsLocalizer } from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
@@ -17,6 +18,8 @@ import {
   deleteDoc,
   doc,
 } from "firebase/firestore";
+import Header from "../components/Header";
+import '../styles/calendar.css'
 
 const locales = {
     "en-US": require("date-fns/locale/en-US"),
@@ -57,7 +60,7 @@ function CalendarView() {
     const usersCollectionRef = collection(firebaseDB, "events");
 
     
-
+    
     const [startTime, setStartTime] = useState('10:00')
     const [endTime, setEndTime] = useState('11:00')
 
@@ -78,12 +81,14 @@ function CalendarView() {
         
         
     // }
+    useAuth()
     const createTask = async () => {
         await addDoc(usersCollectionRef, { event: newEvent })
         setAllEvents([...allEvents, newEvent]);
     };
     return (
-        
+     <> 
+     <Header/>
         <div className="CalendarView">
             
             <h1>Calendar</h1>
@@ -118,7 +123,7 @@ function CalendarView() {
                 style={{ height: 500, margin: "50px" }} 
             />
         </div>
-      
+        </>  
     );
 }
 

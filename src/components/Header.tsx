@@ -3,6 +3,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import { useAppSelector } from '../app/hooks';
 import { firebaseAuth } from '../utils/FirebaseConfig';
+import '../styles/header.css'
 
 
 function Header() {
@@ -13,10 +14,10 @@ function Header() {
       };
   return (
 <>
-    <div>
-        <div onClick={() => navigate("/")}>Header</div>
-        <div>Welcome, {userName}</div>
-        <div onClick={logout}>Logout</div>
+    <div className="header">
+        <div className="header-title" onClick={() => navigate("/")}>ConfrenceConnect</div>
+        <div className="welcome">Welcome, {userName}</div>
+        <div className="logout" onClick={logout}>Logout</div>
     </div>
 </>
   )

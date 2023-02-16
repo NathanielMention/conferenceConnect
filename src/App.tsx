@@ -5,7 +5,6 @@ import CreateMeeting from "./pages/CreateMeeting";
 import Dashboard from "./pages/Dashboard";
 import JoinMeeting from "./pages/JoinMeeting";
 import Login from "./pages/Login";
-import Meeting from "./pages/Meeting";
 import MyMeetings from "./pages/MyMeetings";
 import VideoConference from "./pages/VideoConference";
 import CalendarView from "./pages/Calendar";
@@ -20,7 +19,6 @@ function App() {
       <Route path="/videoconference" element={<VideoConference />} />
       <Route path="/mymeetings" element={<CalendarView />} />
       <Route path="/join/:id" element={<JoinMeeting />} />
-      <Route path="/meetings" element={<Meeting />} />
       <Route path="/" element={<Dashboard />} />
       <Route path="*" element={<Dashboard />} />
       

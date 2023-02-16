@@ -5,6 +5,7 @@ import { firebaseAuth, firebaseDB, usersRef } from "../utils/FirebaseConfig";
 import { useNavigate } from "react-router-dom";
 import { useAppDispatch } from "../app/hooks";
 import { setUser } from "../app/slices/AuthSlice";
+import '../styles/login.css'
 
 function Login() {
   const navigate = useNavigate();
@@ -33,8 +34,9 @@ function Login() {
   }  
 
 return (
-    <div>
-      <button onClick={handleLogin}>Login with Google</button>
+    <div className="login-container">
+      <header>Start ConferenceConnect!</header>
+      <button className='login-btn' onClick={handleLogin}>Login with Google</button>
     </div>
   );
 }

@@ -1,0 +1,36 @@
+.header {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3489ff;
+    color: #FFF;
+}
+
+.header-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.header-title:hover {
+    background-color: rgb(5, 126, 255);
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.welcome {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.logout {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.logout:hover {
+    background-color: rgb(5, 126, 255);
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
