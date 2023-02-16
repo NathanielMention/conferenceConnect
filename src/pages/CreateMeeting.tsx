@@ -9,8 +9,7 @@ function CreateMeeting() {
   return (
     <div>
         <Header/>
-        <div onClick={() => navigate("/create1on1")}>Create 1 on 1 meeting</div>
-        <div onClick={() => navigate("/videoconference")}>Create multi-person meeting</div>
+        <div onClick={() => navigate("/videoconference")}>Create meeting</div>
     </div>
   )
 }

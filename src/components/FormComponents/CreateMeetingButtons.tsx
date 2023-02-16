@@ -13,8 +13,11 @@ function CreateMeetingButtons({
     const navigate = useNavigate()
   return (
     <>
+    <form>
     <button onClick={() => (isEdit ? closeFlyout!() : navigate("/"))}>Cancel</button>
     <button type="submit" onClick={createMeeting}>{isEdit ? "Edit Meeting" : "Create Meeting"}</button>
+    </form>
+    
     </>
 
   )

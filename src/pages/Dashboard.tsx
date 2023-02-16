@@ -13,7 +13,7 @@ function Dashboard() {
     <>
       <div>
         <Header/>
-        <div onClick={() => navigate("/create")}>Create Meeting</div>
+        <div onClick={() => navigate("/videoconference")}>Create Meeting</div>
         <div onClick={() => navigate("/mymeetings")}>View Meetings</div>
         <div onClick={() => navigate("/meetings")}>View Invites</div>
       </div>
