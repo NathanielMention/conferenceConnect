@@ -1,4 +1,44 @@
+# ConferenceConnect
+
+## Table of contents
+
+- [Introduction](#Introduction)
+- [Features](#Features)
+- [Technologies](#Technologies)
+
+## Introduction
+
+An app that allows users to easily plan and manage video meetings
+
+## Features
+
+A few things that you can do on ConferenceConnect:
+
+- Login with email authentication
+- Create new events and add meetings to calendar
+- Create and join video room for meetings
+- Ability to mute audio and stop recording for video meetings
+
+## Technologies
+
+- [Express](https://expressjs.com/)
+- [NodeJS](https://nodejs.org/en/)
+- [React](https://reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Firebase](https://firebase.google.com/)
+- [Redux](https://redux.js.org/)
+
 # Getting Started with Create React App
+
+Clone or download the repository:
+
+`git clone https://github.com/NathanielMention/conferenceConnect`
+
+(Must have Node.js installed)
+
+In the application directory run:
+
+`npm install`
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
