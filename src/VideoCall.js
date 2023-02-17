@@ -53,7 +53,7 @@ export default function VideoCall(props) {
         console.log("error");
       }
 
-      if (tracks) await client.publish([tracks[0], tracks[1]]);
+      if (tracks) await client.publish([tracks[0],tracks[1]]);
       setStart(true);
     };
 

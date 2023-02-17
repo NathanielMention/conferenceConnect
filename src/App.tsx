@@ -1,11 +1,9 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import CreateMeeting from "./pages/CreateMeeting";
 import Dashboard from "./pages/Dashboard";
 import JoinMeeting from "./pages/JoinMeeting";
 import Login from "./pages/Login";
-import MyMeetings from "./pages/MyMeetings";
 import VideoConference from "./pages/VideoConference";
 import CalendarView from "./pages/Calendar";
 
