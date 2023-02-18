@@ -3,12 +3,21 @@
 ## Table of contents
 
 - [Introduction](#Introduction)
+- [Design](#Design)
 - [Features](#Features)
 - [Technologies](#Technologies)
+- [Setup](#Setup)
+- [Credits](#Credits)
 
 ## Introduction
 
 An app that allows users to easily plan and manage video meetings
+
+## Design
+
+<img width="661" alt="Screen Shot 2023-02-17 at 8 21 12 PM" src="https://user-images.githubusercontent.com/36243638/219824368-aaa1aea9-de3b-4aa6-b394-0af11ad37781.png">
+<img width="1440" alt="Screen Shot 2023-02-17 at 8 22 02 PM" src="https://user-images.githubusercontent.com/36243638/219824451-61479b33-1853-4002-a156-0328d4569d35.png">
+<img width="1440" alt="Screen Shot 2023-02-17 at 8 26 51 PM" src="https://user-images.githubusercontent.com/36243638/219824470-c7a91d58-9846-4986-b616-4c0f918d77d5.png">
 
 ## Features
 
@@ -28,7 +37,7 @@ A few things that you can do on ConferenceConnect:
 - [Firebase](https://firebase.google.com/)
 - [Redux](https://redux.js.org/)
 
-# Getting Started with Create React App
+## Setup
 
 Clone or download the repository:
 
@@ -40,47 +49,12 @@ In the application directory run:
 
 `npm install`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In the root application directory run:
 
-## Available Scripts
+`npm start`
 
-In the project directory, you can run:
+## Credits
 
-### `npm start`
+conferenceConnect's video and audio is powered by [Agora](https://www.agora.io/en/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
